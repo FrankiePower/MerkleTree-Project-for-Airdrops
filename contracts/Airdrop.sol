@@ -36,7 +36,7 @@ contract Airdrop is Ownable {
         merkleRoot = _merkleRoot;
     }
 
-    function withdrawRemainingTokens() external onlyOwner {
+    /* function withdrawRemainingTokens() external onlyOwner {
         
         require(balance > 0, "No tokens to withdraw");
         
@@ -44,5 +44,5 @@ contract Airdrop is Ownable {
 
         uint256 balance = token.balanceOf(address(this));
 
-    }
+    } */
 }
