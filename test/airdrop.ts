@@ -1,7 +1,7 @@
-const { expect } = require("chai");
-const { ethers } = require("hardhat");
-const { MerkleTree } = require("merkletreejs");
-const keccak256 = require("keccak256");
+import { expect } from "chai";
+import { ethers } from "hardhat";
+import { MerkleTree } from "merkletreejs";
+import keccak256 from "keccak256";
 
 describe("Airdrop", function () {
   let Airdrop, airdrop, Token, token, owner, addr1, addr2, addr3;
